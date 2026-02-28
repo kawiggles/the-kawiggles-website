@@ -1,0 +1,127 @@
+/* To start off, font face rules that I'm self hosting for display purposes */
+@font-face {
+    font-family: "Garamond";
+    src: url("fonts/EBGaramond-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Garamond Bold";
+    src: url("fonts/EBGaramond-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Times New Roman";
+    src: url("fonts/times.ttf") format("truetype");
+}
+
+/* CSS variables for styling and sizing, divided accordingly */
+:root {
+    --color--black: #000000;
+    --color--white: #FFFFFF;
+    --color--blue: #98c1d9;
+    --color--light-grey: #e0e0e0;
+    --color--accent: #009DD1;
+    --font--base: "Times New Roman", Times, serif;
+    --font--secondary: "Garamond", serif;
+    --font--display: "Garamond Bold", serif;
+
+    --font-small: 0.875rem;
+    --font-base: 1rem;
+    --font-large: 1.25rem;
+    --font-display: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* The body is set up as a grid to indicate where the header, content, and footer should be located. The header and footer both use auto, so that they are automatically sized.  */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+    background-color: var(--color--white);
+    text-wrap: pretty;
+}
+
+/* I know the proper way to do this is with BEM and distinct classes, but for a website of this scale, I think it's unnecessary */
+header {
+    background-color: var(--color--light-grey);
+    text-align: center;
+    font-family: var(--font--display);
+}
+
+h1 {
+    font-size: var(--font-display);
+    margin: 0.5rem;
+}
+
+h2 {
+    font-family: var(--font--secondary);
+    font-size: var(--font-large);
+    margin: 0.5rem;;
+}
+
+p {
+    font-size: var(--font-base);
+    font-family: var(--font--base);
+    margin: 0.5rem;
+}
+
+main {
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: var(--font-base);
+    font-family: var(--font--base);
+}
+
+footer {
+    background-color: var(--color--blue);
+    text-align: center;
+    color: var(--color--black);
+    font-size: var(--font-small);
+}
+
+nav {
+    /* This does the scrolling header effect */
+    position: sticky;
+    top: 0;
+    background-color: var(--color--blue);
+    border-bottom: 1px solid var(--color--black);
+    justify-content: center;
+}
+
+nav ul {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--color--black);
+    text-align: center;
+    font-family: var(--font--display);
+    font-size: var(--font-large);
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    background-color: var(--color--accent);
+}
+
+.homelink {
+    text-decoration: none;
+    color: var(--color--black);
+}
