@@ -31,7 +31,8 @@
 
     --font-small: 0.875rem;
     --font-normal: 1rem;
-    --font-large: 1.25rem;
+    --font-medium: 1.25rem;
+    --font-big: 1.5rem;
     --font-xlarge: 2rem;
 }
 
@@ -45,6 +46,7 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
     background-color: var(--color-white);
+    margin: 0px;
     text-wrap: pretty;
 }
 
@@ -65,13 +67,13 @@ h1 {
 
 h2 {
     font-family: var(--font-bold);
-    font-size: var(--font-large);
+    font-size: var(--font-big);
     margin: 0.5rem;
 }
 
 h3 {
     font-family: var(--font-bold);
-    font-size: var(--font-normal);
+    font-size: var(--font-medium);
     margin: 0.5rem;
 }
 
@@ -79,6 +81,14 @@ p {
     font-size: var(--font-normal);
     font-family: var(--font-basic);
     margin: 0.5rem;
+}
+
+address {
+    margin: 0.5rem;
+}
+
+strong {
+    font-family: var(--font-bold);
 }
 
 main {
@@ -92,6 +102,9 @@ footer {
     background-color: var(--color-blue);
     text-align: center;
     color: var(--color-black);
+}
+
+footer p {
     font-size: var(--font-small);
 }
 
@@ -119,7 +132,7 @@ nav a {
     color: var(--color-black);
     text-align: center;
     font-family: var(--font-bold);
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
 }
 
 nav a.active {
@@ -130,15 +143,53 @@ nav a:hover {
     background-color: var(--color-accent);
 }
 
+article {
+    margin: 1rem;
+    box-shadow: -5px 5px #737270;
+    scroll-margin-top: 3rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 3rem;
+}
+
 article p {
     text-align: justify;
 }
 
-article {
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    border: 1px;
-    margin-right: 10px;
+article div {
+    background-color: var(--color-light-grey);
+    border-bottom: 1px solid var(--color-black);
+}
+
+article div p {
+    font-size: var(--font-small);
+    font-family: var(--font-bold);
+}
+
+.blog_nav {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    scroll-margin-top: 100px;
+    margin-left: 1.5rem;
+}
+
+.blog_nav li {
+    padding: 0;
+    margin-right: 2rem;
+}
+
+.blog_nav a {
+    display: block;
+    text-decoration: underline;
+    color: var(--color-black);
+    font-family: var(--font-bold);
+    font-size: var(--font-normal);
+}
+
+.blog_return {
+    font-size: var(--font-small);
+    text-decoration: none;
+    color: #0000EE;
 }
 
 .homelink {
@@ -146,10 +197,4 @@ article {
     color: var(--color-black);
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 20px;
-}
+
