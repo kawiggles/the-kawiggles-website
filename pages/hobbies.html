@@ -21,21 +21,36 @@
         </nav>
         <main> 
             <h1>Projects and Hobbies</h1>
+
             <h2>Hardware Projects</h2>
-            <p>My introduction to computers was through hardware; my fascination with software came afterwards. Since building my first computer in November of 2025, I have built or helped to build around a dozen computers. While most of these builds were simple desktop computer assemblies, I have extensively tinkered with the machines I use on a daily basis.</p>
+            <p>My introduction to computers was through hardware; my fascination with software came afterwards. Since building my first computer in November 2025, I have built or helped to build around a dozen computers. While most of these builds were simple desktop computer assemblies, I have extensively tinkered with the machines I use on a daily basis.</p>
             <p></p>
 
             <h3>yamato/uss-monitor</h3>
             <p><strong>yamato</strong> and <strong>uss-monitor</strong> are my daily driver desktop computer and laptop, respectively. uss-monitor is a simple HP laptop I used during my time in college, where I only ever used computers to read and write about philosophy. yamato was the first computer I built, its construction motivated by a desire to record music on a machine with superior processing power to a laptop. Because it's easy to power down the desktop and swap out parts, it is by far my most modified machine. It currently includes a Ryzen 9 7950x, an Nvidia RTX 4080 Super, an Nvidia GTX 1050 Ti, and 32 GB of RAM. The desktop introduced me to video games, a genre of media I have recently become fascinated with. The biggest change I've made to both devices in recent history is switching out the operating systems of each. Before February 2026, both devices ran Windows 11 due to the OS availability and ease of use. However, after becoming frustrated with Window's tendency to hide information and operate in tension with Linux systems, as well as a desire to build an environment better suited to studying for the CompTia Linux+ exam, I switched both machines over the the Arch Linux operating system. The process was incredibly rewarding and informative. Both computers currently use the hyprland desktop environment alongside a neovim plugin stack for development and daily use (Proton has made gaming on Linux much simpler).</p>
 
             <h3>great-eastern</h3>
-            <p><strong>great-eastern</strong> is the main server machine on my system. It functions as a network attached storage device for the rest of my machines, and as a platform for hosting containerized services, inlcuding Jellyfin, NextCloud, and Trilium Notes. This computer was the second computer I built, </p>
+            <p><strong>great-eastern</strong> is the main server machine on my system. It functions as a network attached storage device for the rest of my machines, and as a platform for hosting containerized services, inlcuding Jellyfin, NextCloud, and Trilium Notes. I originally built the computer only to satisfy the obsession I had gained for working with computer hardware; at the time I had no intention of using the computer as a full homelab. However, as I became invested in the project, I realized the utility of having a mass storage device that could double as a server for docker containers. Over the course of several months in 2025, I scavenged eBay and facebook marketplace for cheap storage drives to use in the project. During this time, I also became acquainted with the OS that the server is currently using: Unraid. Unraid is a proprietary evolution of the Slackware Linux distribution. It is unique in that it allows for storage drives of different sizes to be arranged as a parity protected array in a simulacrum of a typical RAID storage setup. A parity drive has its bits set to the product of the XOR operation applied to the associated bit of every other drive in the array. This way, if one drive fails, it can be reconstructed using the rest of the array and the parity drive, offering data protection. Unraid also has robust support for hosting and serving docker containers, a utility which I frequently make use of (for example, this website is hosted on a containerized instance of nginx on my server). Additional parts were assembled from a number of sources. I purchased an old intel core i5 8600k, motherboard, and RAM from my friend Nathan. An Arc A380 assists with Jellyfin streaming transcodes. I use an LSI 9211-8i flashed to IT mode as an HBA card for all of the storage drives. Recently, I haved moved several personal services, such as the NAS, to a tailscale mesh network in order to provide better security while still providing the same ease of access. A few of my services (like this website) remain exposed to the internet through this domain name. I use nginx to handle port forwarding and to insure that server traffic is limited to interactions with deployed containers.This project has informed a great deal of my current knowledge about computers.</p>
             <h3>whydah-gally</h3>
-            <p><strong>whydah-gally</strong> is a headless machine used for ripping, transcoding, and organizing media. The machine is built from the remnants of an old Optiplex 990 workstations, with additions of an SSD for storage, an Nvidia T400 for hardware accelerated transcoding, and two r/w optical drives. It runs the minimal installation of Ubuntu Server to maximize the potential of its limited processing power.</p>
-            <h2>Coding Projects</h2>
-            <p>In order to model logic and better understand </p>
+            <p><strong>whydah-gally</strong> is a headless machine used for ripping, transcoding, and organizing media. The machine is built from the remnants of an old Optiplex 990 workstation, with additions of an SSD for storage, an Nvidia T400 for hardware accelerated transcoding, and two r/w optical drives. It runs the minimal installation of Ubuntu Server to maximize the potential of its limited processing power. whydah-gally is mostly used to run software like handbrake and ytdlp, but it also doubles as a secondary storage device for my network, running cron jobs to backup important data from my NAS. This way I'll still have a way to restore things like my Trilium notes if great-eastern ever suffers multiple simultaneous hard-drive failures.</p>
+
+            <h2>Software Projects</h2>
+            <p>After having interacted with a number of open source projects, I naturally became interesting in contributing to some of them. This of course requires a strong understanding of computer programming. Therefore, I have been working on developing the programming skills necessary to one day contribute to these projects. Because I learn best through projects, I concieved of several coding projects to help me build these skills.</p>
+            <h3>This Website</h3>
+            <p> </p>
+            <h3>The C Data Structures Project</h3>
+            <p> </p>
+            <h3>The C++ Game Engine Project</h3>
+            <p> </p>
             <h2>Other Hobbies</h2>
-            <p>Aside from technical projects, </p>
+            <p>Aside from technical projects, I also have many other hobbies which I enjoy spending time practicing and developing skills in.</p>
+            <h3>Bass Guitar and Music</h3>
+            <p> </p>
+            <h3>Gaming</h3>
+            <p> </p>
+            <h3>Philosophy</h3>
+            <p> </p>
+
         </main>
         <footer>
             <p>&copy; 2026 by Kawika Dembroski. All rights reserved.</p>
