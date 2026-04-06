@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: f7rnu-ofwey
+created: 2026-03-12T15:40:53-06:00
